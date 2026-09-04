@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Servicios — Ivette Álvarez</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  .services{display:flex; flex-direction:column; gap:14px; margin-top:24px;}
+  .service{
+    background:var(--paper-raised);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:22px 24px;
+    display:grid;
+    grid-template-columns:44px 1fr;
+    gap:16px;
+    align-items:start;
+  }
+  .service .num{font-family:'IBM Plex Mono', monospace; font-size:13px; color:var(--accent); font-weight:600;}
+  .service h3{font-size:17px; font-weight:600; margin-bottom:6px;}
+  .service p{margin:0; font-size:14.5px; color:var(--ink-muted);}
+
+  .apps{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:24px;}
+  .app{
+    background:var(--paper-raised);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:22px 24px;
+    display:flex; flex-direction:column;
+  }
+  .app.soon{opacity:.6;}
+  .app h3{font-size:17px; font-weight:600; margin-bottom:8px; font-family:'IBM Plex Mono', monospace;}
+  .app p{margin:0; font-size:14px; color:var(--ink-muted); flex:1;}
+  .app a.try{display:inline-block; margin-top:12px; font-size:13px; font-weight:600; color:var(--accent); text-decoration:none;}
+  .app a.try:hover{text-decoration:underline;}
+  .app .soon-badge{
+    display:inline-block; margin-top:12px; font-size:12px; font-weight:600;
+    color:var(--ink-muted); font-family:'IBM Plex Mono', monospace;
+    letter-spacing:.06em; text-transform:uppercase;
+  }
+  @media (max-width:640px){
+    .service{grid-template-columns:28px 1fr;}
+    .apps{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<nav class="site">
+  <a class="brand" href="index.html">Ivette Álvarez</a>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="sobre-mi.html">Sobre mí</a></li>
+    <li><a href="metodo.html">Método</a></li>
+    <li><a href="servicios.html" class="active">Servicios</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul>
+</nav>
+
+<main>
+  <span class="eyebrow">Servicios</span>
+  <h1 style="font-size:clamp(30px,4.5vw,40px); font-weight:600; margin-top:14px;">En qué puedo ayudarte</h1>
+
+  <div class="services">
+    <div class="service">
+      <span class="num">01</span>
+      <div><h3>Diagnóstico de proyectos en crisis</h3><p>Evalúo qué está fallando —técnico y humano— y entrego un plan de acción claro. Sprint de 2 semanas.</p></div>
+    </div>
+    <div class="service">
+      <span class="num">02</span>
+      <div><h3>Coaching PNL para líderes de tecnología</h3><p>Para quien pasa de liderar código o procesos a liderar personas. Paquete de sesiones 1:1.</p></div>
+    </div>
+    <div class="service">
+      <span class="num">03</span>
+      <div><h3>Diseño de sistemas y automatización con enfoque humano</h3><p>Diseño o automatizo procesos considerando también la resistencia al cambio del equipo. Proyecto de consultoría.</p></div>
+    </div>
+  </div>
+
+  <span class="eyebrow" style="margin-top:48px;">La prueba, no solo el discurso</span>
+  <h2 style="font-size:22px; font-weight:600; margin-top:8px; margin-bottom:8px;">Productos digitales en beta</h2>
+  <p style="font-size:14px; color:var(--ink-muted); margin-bottom:8px;">Conoce nuestra tríada de aplicaciones que ayuda a los líderes a identificar sus sesgos y regulación emocional <b>(Mindbug)</b>, a tomar decisiones conscientes y estructuradas <b>(Decisionbug)</b>, y a actuar de manera congruente <b>(Actionbug: próximamente)</b>.</p>
+  <div class="apps">
+    <div class="app">
+      <h3>🧠 Mindbug</h3>
+      <p>Identifica tus sesgos y tu regulación emocional.</p>
+      <a class="try" href="https://mindbug.streamlit.app" target="_blank" rel="noopener">Probar app →</a>
+    </div>
+    <div class="app">
+      <h3>🐞 Decisionbug</h3>
+      <p>Toma decisiones conscientes y estructuradas.</p>
+      <a class="try" href="https://decisionbug.streamlit.app" target="_blank" rel="noopener">Probar app →</a>
+    </div>
+    <div class="app soon">
+      <h3>⚡ Actionbug</h3>
+      <p>Toma acciones congruentes con lo que decidiste.</p>
+      <span class="soon-badge">Próximamente</span>
+    </div>
+  </div>
+</main>
+
+<footer class="site">Ivette Álvarez — 2026</footer>
+
+<script src="type.js" defer></script>
+</body>
+</html>

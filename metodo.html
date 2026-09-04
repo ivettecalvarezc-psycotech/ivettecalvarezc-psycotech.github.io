@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Método — Ivette Álvarez</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  .loop{
+    display:flex; flex-direction:column; gap:0;
+    border:1px solid var(--line);
+    border-radius:12px;
+    overflow:hidden;
+    background:var(--paper-raised);
+    margin:28px 0 12px;
+  }
+  .loop-item{
+    display:grid;
+    grid-template-columns:44px 1fr 1fr;
+    gap:18px;
+    align-items:center;
+    padding:18px 22px;
+    border-bottom:1px solid var(--line);
+  }
+  .loop-item:last-child{border-bottom:none;}
+  .loop-item .n{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px; color:var(--accent);
+    font-weight:600;
+  }
+  .loop-item .disc{
+    font-family:'IBM Plex Sans', sans-serif;
+    font-weight:700;
+    font-size:16px;
+  }
+  .loop-item .fn{
+    font-size:14px;
+    color:var(--ink-muted);
+  }
+  .loop-item .fn b{color:var(--ink); font-weight:500;}
+  .loop-note{
+    font-size:13px; color:var(--ink-muted);
+    padding:14px 22px;
+    background:var(--accent-soft);
+    border-top:1px dashed var(--line);
+  }
+  .venn-block{
+    background:var(--paper-raised);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:24px;
+    box-shadow:var(--shadow);
+    margin:28px 0 8px;
+  }
+  .venn-block svg{width:100%; height:auto; display:block; max-width:640px; margin:0 auto;}
+  .venn-block{padding:20px;}
+  @media (min-width:640px){ .venn-block{padding:32px;} }
+  @media (max-width:600px){
+    .loop-item{grid-template-columns:28px 1fr; row-gap:4px;}
+    .loop-item .fn{grid-column:2;}
+  }
+</style>
+</head>
+<body>
+
+<nav class="site">
+  <a class="brand" href="index.html">Ivette Álvarez</a>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="sobre-mi.html">Sobre mí</a></li>
+    <li><a href="metodo.html" class="active">Método</a></li>
+    <li><a href="servicios.html">Servicios</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul>
+</nav>
+
+<main>
+  <span class="eyebrow">Cómo funciona</span>
+  <h1 style="font-size:clamp(30px,4.5vw,40px); font-weight:600; margin-top:14px; margin-bottom:32px;">Seis especialidades, un mismo sistema</h1>
+
+  <div class="venn-block">
+    <svg viewBox="0 0 800 800" role="img" aria-label="Mapa interdisciplinario: seis disciplinas superpuestas — Ingeniería en Automatización, Tecnologías de la Información, IA, Dirección de proyectos, Coach PNL y Psicología — con sus combinaciones y, al centro, un enlace a Mis Servicios">
+      <circle cx="400" cy="270" r="185" fill="#14161F" opacity="0.08" stroke="#14161F" stroke-width="1.5"/>
+      <circle cx="513" cy="335" r="185" fill="#00D9FF" opacity="0.12" stroke="#00A8C4" stroke-width="1.5"/>
+      <circle cx="513" cy="465" r="185" fill="#14161F" opacity="0.08" stroke="#14161F" stroke-width="1.5"/>
+      <circle cx="400" cy="530" r="185" fill="#00D9FF" opacity="0.12" stroke="#00A8C4" stroke-width="1.5"/>
+      <circle cx="287" cy="465" r="185" fill="#14161F" opacity="0.08" stroke="#14161F" stroke-width="1.5"/>
+      <circle cx="287" cy="335" r="185" fill="#00D9FF" opacity="0.12" stroke="#00A8C4" stroke-width="1.5"/>
+
+      <!-- disciplinas (anillo exterior) -->
+      <text x="400" y="60" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#14161F">Ingeniería en</text>
+      <text x="400" y="78" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#14161F">Automatización</text>
+
+      <text x="690" y="228" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#14161F">Tecnologías de</text>
+      <text x="690" y="246" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#14161F">la Información</text>
+
+      <text x="690" y="568" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#14161F">IA</text>
+
+      <text x="400" y="735" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#14161F">Dirección de</text>
+      <text x="400" y="753" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#14161F">proyectos</text>
+
+      <text x="110" y="568" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#14161F">Coach PNL</text>
+
+      <text x="110" y="228" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#14161F">Psicología</text>
+
+      <!-- combinaciones de dos disciplinas (anillo medio) -->
+      <text x="530" y="175" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="12.5" fill="#3A4048">Robótica e IoT</text>
+
+      <text x="660" y="404" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="12.5" fill="#3A4048">ML Ops y datos</text>
+
+      <text x="530" y="629" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="12.5" fill="#3A4048">Proyectos IA</text>
+
+      <text x="270" y="629" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="12.5" fill="#3A4048">Gestión del cambio</text>
+
+      <text x="140" y="404" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="12.5" fill="#3A4048">Cambio conductual</text>
+
+      <text x="270" y="175" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="12.5" fill="#3A4048">Interacción humana</text>
+
+      <!-- combinaciones de tres disciplinas (anillo interior) -->
+      <text x="400" y="304" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="#5B626F">Computación social</text>
+
+      <text x="487" y="354" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="#5B626F">Escalable</text>
+
+      <text x="487" y="454" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="#5B626F">Autonomía</text>
+
+      <text x="400" y="504" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="#5B626F">Transformación digital</text>
+
+      <text x="313" y="454" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="#5B626F">Agilidad</text>
+
+      <text x="313" y="354" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="#5B626F">UX humano</text>
+
+      <!-- centro -->
+      <a href="servicios.html">
+        <ellipse cx="400" cy="400" rx="66" ry="42" fill="#0B2E36"/>
+        <ellipse cx="400" cy="400" rx="66" ry="42" fill="none" stroke="#00D9FF" stroke-width="1.5"/>
+        <text x="400" y="394" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">Mis</text>
+        <text x="400" y="414" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">Servicios</text>
+      </a>
+    </svg>
+  </div>
+
+  <span class="eyebrow" style="margin-top:48px;">El ciclo</span>
+  <h2 style="font-size:22px; font-weight:600; margin-top:8px;">Seis piezas</h2>
+  <p style="font-size:16px; color:var(--ink-muted); max-width:60ch; margin-top:8px;">
+    Cada disciplina cumple una función específica dentro del mismo ciclo — ninguna sobra, ninguna se repite.
+  </p>
+
+  <div class="loop">
+    <div class="loop-item">
+      <span class="n">01</span>
+      <span class="disc">Psicología</span>
+      <span class="fn">Para <b>entender el comportamiento.</b></span>
+    </div>
+    <div class="loop-item">
+      <span class="n">02</span>
+      <span class="disc">Teoría de sistemas</span>
+      <span class="fn">Para <b>entender el feedback.</b></span>
+    </div>
+    <div class="loop-item">
+      <span class="n">03</span>
+      <span class="disc">IA</span>
+      <span class="fn">Para <b>detectar patrones.</b></span>
+    </div>
+    <div class="loop-item">
+      <span class="n">04</span>
+      <span class="disc">Automatización</span>
+      <span class="fn">Para <b>ejecutar acciones.</b></span>
+    </div>
+    <div class="loop-item">
+      <span class="n">05</span>
+      <span class="disc">Ingeniería</span>
+      <span class="fn">Para <b>diseñar el sistema.</b></span>
+    </div>
+    <div class="loop-item">
+      <span class="n">06</span>
+      <span class="disc">Gestión de proyectos</span>
+      <span class="fn">Para <b>integrar disciplinas.</b></span>
+    </div>
+    <div class="loop-note">El ciclo se repite: cada acción se vuelve a observar con psicología, y el sistema se ajusta de nuevo.</div>
+  </div>
+
+  <section style="margin-top:56px;">
+    <span class="eyebrow">En qué se aplica</span>
+    <h2 style="font-size:22px; font-weight:600; margin-top:8px; margin-bottom:24px;">Cuatro áreas de trabajo</h2>
+    <div class="pillars">
+      <div class="pillar">
+        <span class="num">01</span>
+        <h3>Patrones y creencias</h3>
+        <p>Identificar y cambiar las creencias que frenan: síndrome del impostor, perfeccionismo, autoexigencia.</p>
+      </div>
+      <div class="pillar">
+        <span class="num">02</span>
+        <h3>Liderazgo y comunicación</h3>
+        <p>Para quienes pasan de liderar tareas o código a liderar personas.</p>
+      </div>
+      <div class="pillar">
+        <span class="num">03</span>
+        <h3>Adaptación profesional</h3>
+        <p>Reinvención de carrera e identidad profesional frente a los cambios que trae la IA.</p>
+      </div>
+      <div class="pillar">
+        <span class="num">04</span>
+        <h3>Bienestar y rendimiento</h3>
+        <p>Foco, energía y límites sanos en una industria que normaliza el desgaste.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">Ivette Álvarez — 2026</footer>
+
+<script src="type.js" defer></script>
+</body>
+</html>
