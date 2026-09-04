@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
 <style>
-  .services{display:flex; flex-direction:column; gap:14px; margin-top:24px;}
+  .services{display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin-top:24px;}
   .service{
     background:var(--paper-raised);
     border:1px solid var(--line);
@@ -42,6 +42,7 @@
   }
   @media (max-width:640px){
     .service{grid-template-columns:28px 1fr;}
+    .services{grid-template-columns:1fr;}
     .apps{grid-template-columns:1fr;}
   }
 </style>
@@ -63,18 +64,27 @@
   <span class="eyebrow">Servicios</span>
   <h1 style="font-size:clamp(30px,4.5vw,40px); font-weight:600; margin-top:14px;">En qué puedo ayudarte</h1>
 
+  <span class="eyebrow" style="margin-top:40px;">Servicios para empresas</span>
   <div class="services">
     <div class="service">
       <span class="num">01</span>
-      <div><h3>Diagnóstico de proyectos en crisis</h3><p>Evalúo qué está fallando —técnico y humano— y entrego un plan de acción claro. Sprint de 2 semanas.</p></div>
+      <div><h3>Dirección de proyectos complejos</h3><p>Identifico qué está fallando —<b>rescate</b> técnico y humano— y lo reencauzo con un plan de acción claro. <b>Reencauce</b> en un sprint de 2 semanas.</p></div>
     </div>
     <div class="service">
       <span class="num">02</span>
-      <div><h3>Coaching PNL para líderes de tecnología</h3><p>Para quien pasa de liderar código o procesos a liderar personas. Paquete de sesiones 1:1.</p></div>
+      <div><h3>Sistemas con enfoque humano</h3><p>Diseño y automatizo procesos considerando también la resistencia al cambio del equipo. Proyecto de consultoría.</p></div>
+    </div>
+  </div>
+
+  <span class="eyebrow" style="margin-top:40px;">Servicios para personas</span>
+  <div class="services">
+    <div class="service">
+      <span class="num">01</span>
+      <div><h3>Liderazgo consciente</h3><p>Incluye identificación de sesgos y toma de decisiones. Coaching PNL 1:1.</p></div>
     </div>
     <div class="service">
-      <span class="num">03</span>
-      <div><h3>Diseño de sistemas y automatización con enfoque humano</h3><p>Diseño o automatizo procesos considerando también la resistencia al cambio del equipo. Proyecto de consultoría.</p></div>
+      <span class="num">02</span>
+      <div><h3>Tu doble digital profesional</h3><p>Reinvención de tu path profesional (mayores de 40) y automatización de tareas repetitivas.</p></div>
     </div>
   </div>
 
