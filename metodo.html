@@ -60,6 +60,13 @@
     .loop-item{grid-template-columns:28px 1fr; row-gap:4px;}
     .loop-item .fn{grid-column:2;}
   }
+  @media (prefers-color-scheme: dark){
+    .venn-circle-dark{fill:#EDEFF2; opacity:0.09; stroke:#EDEFF2;}
+    .venn-circle-cyan{opacity:0.16;}
+    .venn-label{fill:#EDEFF2;}
+    .venn-label-mid{fill:#B7BFC8;}
+    .venn-label-inner{fill:#98A1AC;}
+  }
 </style>
 </head>
 <body>
@@ -81,54 +88,54 @@
 
   <div class="venn-block">
     <svg viewBox="0 0 800 800" role="img" aria-label="Mapa interdisciplinario: seis disciplinas superpuestas — Ingeniería en Automatización, Tecnologías de la Información, IA, Dirección de proyectos, Coach PNL y Psicología — con sus combinaciones y, al centro, un enlace a Mis Servicios">
-      <circle cx="400" cy="270" r="185" fill="#14161F" opacity="0.08" stroke="#14161F" stroke-width="1.5"/>
-      <circle cx="513" cy="335" r="185" fill="#00D9FF" opacity="0.12" stroke="#00A8C4" stroke-width="1.5"/>
-      <circle cx="513" cy="465" r="185" fill="#14161F" opacity="0.08" stroke="#14161F" stroke-width="1.5"/>
-      <circle cx="400" cy="530" r="185" fill="#00D9FF" opacity="0.12" stroke="#00A8C4" stroke-width="1.5"/>
-      <circle cx="287" cy="465" r="185" fill="#14161F" opacity="0.08" stroke="#14161F" stroke-width="1.5"/>
-      <circle cx="287" cy="335" r="185" fill="#00D9FF" opacity="0.12" stroke="#00A8C4" stroke-width="1.5"/>
+      <circle cx="400" cy="270" r="185" fill="#14161F" opacity="0.08" stroke="#14161F" stroke-width="1.5" class="venn-circle-dark"/>
+      <circle cx="513" cy="335" r="185" fill="#00D9FF" opacity="0.12" stroke="#00A8C4" stroke-width="1.5" class="venn-circle-cyan"/>
+      <circle cx="513" cy="465" r="185" fill="#14161F" opacity="0.08" stroke="#14161F" stroke-width="1.5" class="venn-circle-dark"/>
+      <circle cx="400" cy="530" r="185" fill="#00D9FF" opacity="0.12" stroke="#00A8C4" stroke-width="1.5" class="venn-circle-cyan"/>
+      <circle cx="287" cy="465" r="185" fill="#14161F" opacity="0.08" stroke="#14161F" stroke-width="1.5" class="venn-circle-dark"/>
+      <circle cx="287" cy="335" r="185" fill="#00D9FF" opacity="0.12" stroke="#00A8C4" stroke-width="1.5" class="venn-circle-cyan"/>
 
       <!-- disciplinas (anillo exterior) -->
-      <text x="400" y="60" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#14161F">Ingeniería en</text>
-      <text x="400" y="78" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#14161F">Automatización</text>
+      <text x="400" y="60" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#14161F" class="venn-label">Ingeniería en</text>
+      <text x="400" y="78" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#14161F" class="venn-label">Automatización</text>
 
-      <text x="690" y="228" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#14161F">Tecnologías de</text>
-      <text x="690" y="246" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#14161F">la Información</text>
+      <text x="690" y="228" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#14161F" class="venn-label">Tecnologías de</text>
+      <text x="690" y="246" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#14161F" class="venn-label">la Información</text>
 
-      <text x="690" y="568" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#14161F">IA</text>
+      <text x="690" y="568" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#14161F" class="venn-label">IA</text>
 
-      <text x="400" y="735" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#14161F">Dirección de</text>
-      <text x="400" y="753" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#14161F">proyectos</text>
+      <text x="400" y="735" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#14161F" class="venn-label">Dirección de</text>
+      <text x="400" y="753" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#14161F" class="venn-label">proyectos</text>
 
-      <text x="110" y="568" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#14161F">Coach PNL</text>
+      <text x="110" y="568" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#14161F" class="venn-label">Coach PNL</text>
 
-      <text x="110" y="228" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#14161F">Psicología</text>
+      <text x="110" y="228" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#14161F" class="venn-label">Psicología</text>
 
       <!-- combinaciones de dos disciplinas (anillo medio) -->
-      <text x="530" y="175" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="12.5" fill="#3A4048">Robótica e IoT</text>
+      <text x="530" y="175" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="12.5" fill="#3A4048" class="venn-label-mid">Robótica e IoT</text>
 
-      <text x="660" y="404" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="12.5" fill="#3A4048">ML Ops y datos</text>
+      <text x="660" y="404" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="12.5" fill="#3A4048" class="venn-label-mid">ML Ops y datos</text>
 
-      <text x="530" y="629" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="12.5" fill="#3A4048">Proyectos IA</text>
+      <text x="530" y="629" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="12.5" fill="#3A4048" class="venn-label-mid">Proyectos IA</text>
 
-      <text x="270" y="629" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="12.5" fill="#3A4048">Gestión del cambio</text>
+      <text x="270" y="629" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="12.5" fill="#3A4048" class="venn-label-mid">Gestión del cambio</text>
 
-      <text x="140" y="404" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="12.5" fill="#3A4048">Cambio conductual</text>
+      <text x="140" y="404" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="12.5" fill="#3A4048" class="venn-label-mid">Cambio conductual</text>
 
-      <text x="270" y="175" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="12.5" fill="#3A4048">Interacción humana</text>
+      <text x="270" y="175" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="12.5" fill="#3A4048" class="venn-label-mid">Interacción humana</text>
 
       <!-- combinaciones de tres disciplinas (anillo interior) -->
-      <text x="400" y="304" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="#5B626F">Computación social</text>
+      <text x="400" y="304" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="#5B626F" class="venn-label-inner">Computación social</text>
 
-      <text x="487" y="354" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="#5B626F">Escalable</text>
+      <text x="487" y="354" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="#5B626F" class="venn-label-inner">Escalable</text>
 
-      <text x="487" y="454" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="#5B626F">Autonomía</text>
+      <text x="487" y="454" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="#5B626F" class="venn-label-inner">Autonomía</text>
 
-      <text x="400" y="504" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="#5B626F">Transformación digital</text>
+      <text x="400" y="504" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="#5B626F" class="venn-label-inner">Transformación digital</text>
 
-      <text x="313" y="454" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="#5B626F">Agilidad</text>
+      <text x="313" y="454" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="#5B626F" class="venn-label-inner">Agilidad</text>
 
-      <text x="313" y="354" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="#5B626F">UX humano</text>
+      <text x="313" y="354" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="#5B626F" class="venn-label-inner">UX humano</text>
 
       <!-- centro -->
       <a href="servicios.html">
