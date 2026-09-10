@@ -31,6 +31,10 @@
     display:flex; flex-direction:column;
   }
   .app.soon{opacity:.6;}
+  .app .stage{
+    font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--accent); margin-bottom:8px;
+  }
   .app h3{font-size:17px; font-weight:600; margin-bottom:8px; font-family:'IBM Plex Mono', monospace;}
   .app p{margin:0; font-size:14px; color:var(--ink-muted); flex:1;}
   .app a.try{display:inline-block; margin-top:12px; font-size:13px; font-weight:600; color:var(--accent); text-decoration:none;}
@@ -40,6 +44,13 @@
     color:var(--ink-muted); font-family:'IBM Plex Mono', monospace;
     letter-spacing:.06em; text-transform:uppercase;
   }
+  .proof-note{
+    margin-top:20px; padding:16px 18px;
+    border-left:2px solid var(--accent);
+    background:var(--paper-raised);
+    font-size:14px; color:var(--ink-muted); line-height:1.65;
+  }
+  .track-intro{font-size:14.5px; color:var(--ink-muted); margin-top:10px; line-height:1.65; max-width:64ch;}
   @media (max-width:640px){
     .service{grid-template-columns:28px 1fr;}
     .services{grid-template-columns:1fr;}
@@ -61,10 +72,38 @@
 </nav>
 
 <main>
-  <span class="eyebrow">Servicios</span>
-  <h1 style="font-size:clamp(30px,4.5vw,40px); font-weight:600; margin-top:14px;">En qué puedo ayudarte</h1>
+  <span class="eyebrow">La prueba, no solo el discurso</span>
+  <h1 style="font-size:clamp(30px,4.5vw,40px); font-weight:600; margin-top:14px;">Mente, Decisión, Acción — hecho producto</h1>
+  <p class="track-intro">Cada aplicación resuelve una etapa del mismo ciclo: ver el sesgo que distorsiona el diagnóstico, estructurar la decisión, y ejecutar de forma congruente con lo decidido.</p>
 
-  <span class="eyebrow" style="margin-top:40px;">Servicios para empresas</span>
+  <div class="apps">
+    <div class="app">
+      <span class="stage">01 · Mente</span>
+      <h3>🧠 Mindbug</h3>
+      <p>Identifica los sesgos y las distorsiones de pensamiento que están sesgando tu lectura de la situación.</p>
+      <a class="try" href="https://mindbug.streamlit.app" target="_blank" rel="noopener">Probar app →</a>
+    </div>
+    <div class="app">
+      <span class="stage">02 · Decisión</span>
+      <h3>🐞 Decisionbug</h3>
+      <p>Estructura la decisión con la información que sí importa, en vez de la que está más a la mano.</p>
+      <a class="try" href="https://decisionbug.streamlit.app" target="_blank" rel="noopener">Probar app →</a>
+    </div>
+    <div class="app soon">
+      <span class="stage">03 · Acción</span>
+      <h3>⚡ Actionbug</h3>
+      <p>Convierte lo decidido en acciones congruentes y sostenidas en el tiempo.</p>
+      <span class="soon-badge">Próximamente</span>
+    </div>
+  </div>
+
+  <p class="proof-note">Diseñé el modelo funcional y desarrollé las aplicaciones de punta a punta, sobre una taxonomía propia de más de 200 sesgos cognitivos y distorsiones de pensamiento traducida a criterios detectables. Ambas están en versión beta, en validación con usuarios reales.</p>
+
+  <span class="eyebrow" style="margin-top:56px;">Trabajemos juntos</span>
+  <h2 style="font-size:clamp(26px,3.8vw,34px); font-weight:600; margin-top:14px;">El mismo diagnóstico, dos escalas</h2>
+  <p class="track-intro">El ciclo funciona igual dentro de una organización que dentro de una persona. Cambia el tamaño del sistema, no la lógica.</p>
+
+  <span class="eyebrow" style="margin-top:36px;">Para empresas</span>
   <div class="services">
     <div class="service">
       <span class="num">01</span>
@@ -76,7 +115,7 @@
     </div>
   </div>
 
-  <span class="eyebrow" style="margin-top:40px;">Servicios para personas</span>
+  <span class="eyebrow" style="margin-top:36px;">Para personas</span>
   <div class="services">
     <div class="service">
       <span class="num">01</span>
@@ -85,27 +124,6 @@
     <div class="service">
       <span class="num">02</span>
       <div><h3>Tu doble digital profesional</h3><p>Reinvención de tu path profesional (mayores de 40) y automatización de tareas repetitivas.</p></div>
-    </div>
-  </div>
-
-  <span class="eyebrow" style="margin-top:48px;">La prueba, no solo el discurso</span>
-  <h2 style="font-size:clamp(30px,4.5vw,40px); font-weight:600; margin-top:14px; margin-bottom:16px;">Productos digitales en beta</h2>
-  <p style="font-size:14px; color:var(--ink-muted); margin-bottom:8px;">Conoce mi tríada de aplicaciones que ayuda a los líderes a identificar sus sesgos y regulación emocional <b>(Mindbug)</b>, a tomar decisiones conscientes y estructuradas <b>(Decisionbug)</b>, y a actuar de manera congruente <b>(Actionbug: próximamente)</b>.</p>
-  <div class="apps">
-    <div class="app">
-      <h3>🧠 Mindbug</h3>
-      <p>Identifica tus sesgos y tu regulación emocional.</p>
-      <a class="try" href="https://mindbug.streamlit.app" target="_blank" rel="noopener">Probar app →</a>
-    </div>
-    <div class="app">
-      <h3>🐞 Decisionbug</h3>
-      <p>Toma decisiones conscientes y estructuradas.</p>
-      <a class="try" href="https://decisionbug.streamlit.app" target="_blank" rel="noopener">Probar app →</a>
-    </div>
-    <div class="app soon">
-      <h3>⚡ Actionbug</h3>
-      <p>Toma acciones congruentes con lo que decidiste.</p>
-      <span class="soon-badge">Próximamente</span>
     </div>
   </div>
 </main>
